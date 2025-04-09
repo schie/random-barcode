@@ -1,0 +1,45 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  /* padding: 2rem; */
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+  border-radius: 15px;
+  background: #ffffff; /* White background for contrast */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25),
+    /* Main shadow below the card */ 0 6px 6px rgba(0, 0, 0, 0.22); /* Softer shadow for realism */
+  transform: translateY(-5px); /* Slight lift effect */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effect */
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Lift higher on hover */
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3),
+    /* Stronger shadow on hover */ 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.card:active {
+  transform: translateY(0); /* Press down to the surface */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2),
+    /* Reduced shadow for pressed effect */ 0 3px 3px rgba(0, 0, 0, 0.15);
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
