@@ -33,6 +33,12 @@ Follow the prompts to generate barcodes.
 
 Contributions are welcome! Please fork the repository and submit a pull request.
 
+## Continuous Integration
+
+This project uses [GitHub Super-Linter](https://github.com/super-linter/super-linter)
+to validate code style in pull requests. Dependency updates are managed by
+Dependabot.
+
 ## License
 
 This project is licensed under the MIT License.
