@@ -80,7 +80,7 @@ function App() {
   }, [setNewBarcode]);
 
   const docsAddendum = useMemo(
-    () => `Click it to ${enabled ? "pause" : "continue"}`,
+    () => `Click it to ${enabled ? 'pause' : 'continue'}`,
     [enabled]
   );
 
