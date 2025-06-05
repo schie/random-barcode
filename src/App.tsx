@@ -77,7 +77,7 @@ function App() {
 
   const toggle = useCallback(() => {
     setEnabled((prev) => !prev);
-  }, [setNewBarcode]);
+  }, []);
 
   const docsAddendum = useMemo(
     () => `Click it to ${enabled ? "pause" : "continue"}`,
