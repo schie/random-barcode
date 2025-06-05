@@ -33,6 +33,11 @@ Follow the prompts to generate barcodes.
 
 Contributions are welcome! Please fork the repository and submit a pull request.
 
+## Deployment
+
+Releases are managed by [release-please](https://github.com/googleapis/release-please).
+Publishing a release automatically triggers a deployment to GitHub Pages.
+
 ## License
 
 This project is licensed under the MIT License.
