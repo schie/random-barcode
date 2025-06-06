@@ -38,6 +38,7 @@ const clearBarcodesParam = () => {
  */
 function App() {
   const [enabled, setEnabled] = useState(true);
+  const [showInfo, setShowInfo] = useState(false);
 
   const containerRef = useRef<SVGSVGElement>(null);
 
@@ -80,9 +81,12 @@ function App() {
   }, []);
 
   const docsAddendum = useMemo(
-    () => `Click it to ${enabled ? "pause" : "continue"}`,
-    [enabled]
+    () => `Click it to ${enabled ? 'pause' : 'continue'}`,
+    [enabled],
   );
+
+  const openInfo = useCallback(() => setShowInfo(true), []);
+  const closeInfo = useCallback(() => setShowInfo(false), []);
 
   return (
     <>
@@ -90,15 +94,23 @@ function App() {
         <svg className="barcode" ref={containerRef} onClick={toggle} />
       </div>
       <p className="read-the-docs">Just a random barcode.</p>
-      <p className="read-the-docs">{docsAddendum}</p>
+      <button className="info-button" onClick={openInfo}>Info</button>
+      {showInfo && (
+        <div className="modal-overlay" onClick={closeInfo}>
+          <div className="modal" onClick={(e) => e.stopPropagation()}>
+            <p className="read-the-docs">{docsAddendum}</p>
+            <p className="read-the-docs">
+              Use the <code>barcodes</code> query parameter to provide a custom list of barcodes.
+              <br />
+              For example: <code>?barcodes=12345,67890,ABCDE</code>.
+              <br />
+              The app will randomly select barcodes from this list.
+            </p>
+            <button onClick={closeInfo}>Close</button>
+          </div>
+        </div>
+      )}
       <hr />
-      <p className="read-the-docs">
-        Use the <code>barcodes</code> query parameter to provide a custom list of barcodes.
-        <br />
-        For example: <code>?barcodes=12345,67890,ABCDE</code>.
-        <br />
-        The app will randomly select barcodes from this list.
-      </p>
       {barcodes.length > 0 && (
         <button onClick={clearBarcodesParam}>Remove Barcodes Query Param</button>
       )}
