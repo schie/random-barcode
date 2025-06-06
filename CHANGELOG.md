@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/schie/random-barcode/compare/v1.0.0...v1.1.0) (2025-06-06)
+
+
+### Features
+
+* **responsive:** improve layout for mobile screens ([#22](https://github.com/schie/random-barcode/issues/22)) ([c74b626](https://github.com/schie/random-barcode/commit/c74b6269824835affcbbf28c7d04ab189afa50bf))
+
 ## 1.0.0 (2025-06-06)
 
 
