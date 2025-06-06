@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/schie/random-barcode/compare/v1.1.0...v1.1.1) (2025-06-06)
+
+
+### Bug Fixes
+
+* **ui:** limit barcode width ([#24](https://github.com/schie/random-barcode/issues/24)) ([9604ddd](https://github.com/schie/random-barcode/commit/9604dddc5fa485045b7f083ac93b066addde3329))
+
 ## [1.1.0](https://github.com/schie/random-barcode/compare/v1.0.0...v1.1.0) (2025-06-06)
 
 
