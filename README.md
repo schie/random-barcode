@@ -37,6 +37,8 @@ Contributions are welcome! Please fork the repository and submit a pull request.
 
 Releases are managed by [release-please](https://github.com/googleapis/release-please).
 Publishing a release automatically triggers a deployment to GitHub Pages.
+If the automatic deployment fails, you can trigger the **Manual Deploy** workflow
+from the GitHub Actions tab to redeploy the site.
 
 ## License
 
