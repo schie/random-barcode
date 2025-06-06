@@ -87,7 +87,7 @@ function App() {
   return (
     <>
       <div className="card">
-        <svg ref={containerRef} onClick={toggle} />
+        <svg className="barcode" ref={containerRef} onClick={toggle} />
       </div>
       <p className="read-the-docs">Just a random barcode.</p>
       <p className="read-the-docs">{docsAddendum}</p>
