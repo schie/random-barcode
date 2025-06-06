@@ -19,7 +19,7 @@
 .card {
   box-sizing: border-box;
   width: 100%;
-  max-width: 600px;
+  max-width: var(--max-width-card);
   padding: 2em;
   border-radius: 15px;
   background: #ffffff; /* White background for contrast */
