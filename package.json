@@ -1,7 +1,7 @@
 {
   "name": "random-barcode",
   "private": true,
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A simple React app that generates random barcodes using jsbarcode.",
   "author": {
     "email": "github@schie.io",
