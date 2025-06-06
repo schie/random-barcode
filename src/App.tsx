@@ -103,7 +103,7 @@ function App() {
         <button onClick={clearBarcodesParam}>Remove Barcodes Query Param</button>
       )}
       <p className="footer">
-        Made with ❤️ by{" "}
+        v{APP_VERSION} – Made with ❤️ by{" "}
         <a
           className="footer-link"
           href="https://github.com/schie"
